@@ -1,0 +1,976 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icone {
+  border-radius: 8px;
+  text-align: left;
+  background: rgba(55, 55, 55, 0.302);
+  padding: 10px 10px;
+  width: 45px;
+  height: 45px;
+  color: rgba(202, 0, 37, 0.753);
+}
+
+#imagem_logo {
+  height: 70px;
+  margin: 0;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  background-color: #000000;
+  line-height: 1.5;
+}
+
+.desc {
+  color: rgba(161, 161, 161, 0.888);
+}
+
+/* --- Cabeçalho --- */
+#cabecalho {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+  flex-wrap: wrap;
+}
+
+label {
+  margin-left: 0;
+}
+
+#logo {
+  padding-left: 100px;
+  display: flex;
+  padding: 0;
+}
+
+#titulo {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+#menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.menu-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.726);
+  margin-right: 10px;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* --- Conteúdo Principal --- */
+#principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#container {
+  max-width: 800px;
+  text-align: center;
+  margin: 100px auto 50px auto;
+  padding: 30px 20px;
+}
+
+#descricoes {
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#container2 {
+  max-width: 900px;
+  text-align: center;
+  margin: 100px auto 50px auto;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+#container3 {
+  max-width: 900px;
+  text-align: center;
+  margin: 100px auto 50px auto;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+.descricoesnegocio {
+  color: white;
+}
+
+#gratuito {
+  font-size: 30px;
+  color: red;
+}
+
+.titulonegocio {
+  font-size: 30px;
+}
+
+#titulo1 {
+  font-size: clamp(2rem, 6vw, 70px);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#titulo2 {
+  color: red;
+  font-size: clamp(2rem, 6vw, 70px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: rgb(168, 168, 168);
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+select {
+  text-align: left;
+}
+
+/* --- Navbar de busca --- */
+#navbar {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+}
+
+#buscador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.encontrar,
+.cadastraragora {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 16px 45px;
+  border-radius: 8px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  white-space: nowrap;
+}
+
+.encontrar:hover,
+.cadastraragora:hover {
+  background: #8500007e;
+  border: none;
+}
+
+.cadastrar,
+.ver {
+  background: black;
+  color: white;
+  border: 2px solid rgba(80, 80, 80, 0.515);
+  padding: 16px 45px;
+  border-radius: 8px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  white-space: nowrap;
+}
+
+.cadastrar:hover,
+.ver:hover {
+  background: #63636363;
+}
+
+/* === INFO E SERV - BLOQUINHOS QUADRADINHOS === */
+
+.serv2 {
+  flex: 1 1 280px;
+  max-width: 400px;
+  min-height: 250px; /* opcional, para manter o tamanho original */
+  
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+
+  padding: 20px;
+  text-align: center;
+  color: white;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.infos {
+  flex: 1 1 200px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 35px 25px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  min-height: 150px;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.serv {
+  flex: 1 1 300px;      /* Agora a caixa pode encolher */
+  max-width: 500px;     /* Mantém o visual original */
+  min-height: 200px;    /* Mesma altura visual */
+  
+  width: 100%;          /* ESSENCIAL para responsivo */
+  height: auto;         /* Evita estourar */
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Ícones dos serviços */
+.serv .icone {
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+/* Hover */
+.infos:hover,
+.serv:hover,
+.serv2:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+}
+
+/* Tipografia das caixas */
+.descricoes {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ff0000;
+}
+
+.desc {
+  font-size: 1rem;
+  color: rgba(200, 200, 200, 0.9);
+  line-height: 1.4;
+}
+
+/* --- Serviços container --- */
+.servicos {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#buscador2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* --- Botões do cabeçalho --- */
+.botao-cabecalho-entrar,
+.botao-cabecalho-cadastrar {
+  background: beige;
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.botao-cabecalho-entrar:hover,
+.botao-cabecalho-cadastrar:hover {
+  background: #030712;
+  color: white;
+}
+
+.plataforma {
+  color: white;
+}
+
+.plataforma:hover {
+  color: gray;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 900px) {
+  #cabecalho {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  #logo {
+    padding: 0;
+    justify-content: center;
+  }
+
+  #menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-right: 0;
+  }
+
+  .menu-botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botao-cabecalho-entrar,
+  .botao-cabecalho-cadastrar {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  #descricoes,
+  .servicos {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .infos,
+  .serv {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  #container,
+  #container2,
+  #container3 {
+    margin: 60px auto;
+    padding: 15px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .encontrar,
+  .cadastrar,
+  .cadastraragora,
+  .ver {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  #buscador,
+  #buscador2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .descricoes {
+    font-size: 2rem;
+  }
+
+  #titulo1,
+  #titulo2 {
+    font-size: 1.8rem;
+  }
+
+  .titulonegocio {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #titulo1,
+  #titulo2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  #descricoes {
+    margin-top: 40px;
+    padding: 10px;
+  }
+}
+
+
+#rodape {
+  background-color: #000;
+  /* Mantém o fundo preto */
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  /* Centraliza todo o conteúdo */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.rodape-container {
+  display: flex;
+  flex-direction: column;
+  /* Colunas empilhadas em telas pequenas */
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#links-rodape {
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rodape-coluna h3 {
+  margin-bottom: 15px;
+  color: #ff0000;
+  /* Título vermelho */
+  font-size: 1.2rem;
+}
+
+.p_rodape {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#rodape_do_rodape {
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.171);
+  padding: 20px 0;
+  text-align: center;
+}
+
+#equipe {
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.171);
+  padding: 60px 0;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#dev-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.nomes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  #links-rodape {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+#dev-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  flex-wrap: wrap;
+}
+
+/* Estilo igual às caixas .infos acima */
+.dev-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  /* Menor = mais espaço interno útil */
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+
+  width: 220px;
+  /* ⬅ tamanho perfeito */
+  height: 150px;
+  /* ⬅ proporcional e limpo */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover igual ao das outras caixas */
+.dev-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .dev-card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+#sobre-projeto {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sobe 0.8s ease forwards;
+}
+
+@keyframes sobe {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   SEÇÃO DE DEPOIMENTOS
+=========================== */
+
+#depoimentos {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-depoimentos {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subtitulo-depoimentos {
+  color: rgba(200, 200, 200, 0.85);
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+#depoimentos-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card no mesmo estilo das suas caixas */
+.depo-card {
+  width: 330px;
+  min-height: 230px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+  padding: 25px;
+  text-align: left;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.depo-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
+}
+
+.quote {
+  font-size: 35px;
+  color: #ff0000;
+}
+
+.depo-text {
+  color: rgba(220, 220, 220, 0.9);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.depo-nome {
+  margin-top: 18px;
+  color: #ff0000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.depo-profissao {
+  color: rgba(200, 200, 200, 0.7);
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .titulo-depoimentos {
+    font-size: 1.8rem;
+  }
+
+  #depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depo-card {
+    width: 90%;
+  }
+}
+
+
+
+/* ====== Generated utility classes (keeps visual parity with original inline styles) ====== */
+
+.glass-section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 50px 35px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 0 20px rgba(255,0,0,0.05);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.glass-card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card {
+  width: 280px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover, .glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(255,0,0,0.18);
+  border-color: rgba(255,0,0,0.4);
+}
+
+.icon-lg { font-size: 40px; }
+.icon-red { color: #ff4b4b; }
+
+.section-title {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  color: rgba(200,200,200,0.9);
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.lead-text {
+  max-width: 750px;
+  margin: 20px auto;
+  color: rgb(180,180,180);
+  font-size: 1.2rem;
+}
+
+.status-text {
+  margin-top: 20px;
+  color: red;
+  font-weight: 600;
+}
+
+
+/* Generated from inline styles - fallback classes */
+.inline-legacy-1 { color:white; }
+.inline-legacy-2 { margin-top:25px; }
+.inline-legacy-3 { margin-top:20px; }
+.inline-legacy-4 { color:#ff4b4b; }
+.inline-legacy-5 { 
+    display:flex; 
+    gap:25px; 
+    justify-content:center; 
+    flex-wrap:wrap;
+    margin-top:30px;
+   }
+.inline-legacy-6 { 
+      width:280px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:12px;
+      padding:25px 20px;
+      text-align:center;
+      transition:0.3s;
+     }
+.inline-legacy-7 { font-size:40px; color:#ff3b3b; }
+.inline-legacy-8 { color:white; margin:10px 0; font-size:1.2rem; }
+.inline-legacy-9 { color:rgba(200,200,200,0.85); font-size:0.95rem; }
+.inline-legacy-10 { 
+    display:flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    gap:25px;
+   }
+.inline-legacy-11 { 
+      width:300px;
+      padding:25px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+     }
+.inline-legacy-12 { color:white; margin-top:10px; }
+.inline-legacy-13 { color:rgba(200,200,200,0.8); font-size:0.95rem; }
+.inline-legacy-14 { 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+   }
+.inline-legacy-15 { 
+      width:330px;
+      padding:25px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+     }
+.inline-legacy-16 { color:white; margin-top:10px; font-size:1.3rem; }
+.inline-legacy-17 { 
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:40px;
+   }
+.inline-legacy-18 { 
+      width:260px;
+      padding:25px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:12px;
+      transition:0.3s;
+     }
+.inline-legacy-19 { color:white; margin-top:50px; font-size:1.5rem; }
+.inline-legacy-20 { color:rgba(200,200,200,0.85); font-size:1rem; margin-top:20px; }
+.inline-legacy-21 { 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:25px;
+   }
+.inline-legacy-22 { 
+      width:300px;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+     }
+.inline-legacy-23 { margin-top:10px; font-size:0.95rem; color:rgba(255,255,255,0.65); }
+.inline-legacy-24 { 
+  max-width: 900px; 
+  margin: 80px auto 40px auto; 
+  text-align: center; 
+  padding: 40px 20px; 
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 20px rgba(255,0,0,0.05);
+  transition: all 0.3s ease;
+ }
+.inline-legacy-25 { 
+    color: white; 
+    font-size: 2rem; 
+    margin-bottom: 15px;
+    font-weight: 600;
+   }
+.inline-legacy-26 { color:white; font-size:2rem; margin-bottom:10px; }
+.inline-legacy-27 { 
+    margin-top:20px; 
+    font-size:1rem; 
+    color:rgba(220,220,220,0.8);
+    line-height:1.6;
+   }
+.inline-legacy-28 { text-align:center; }
+.inline-legacy-29 { font-size:0.85rem; opacity:0.75; }
+.inline-legacy-30 { margin-top: 20px; color: rgba(255,255,255,0.6); font-size: 0.9rem; text-align: center; }
+
+.bloco-final {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 35px 25px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.bloco-final:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,0,0,0.4);
+  box-shadow: 0 0 15px rgba(255,0,0,0.15);
+}
+
+/* ============================
+   HOVERS PARA INLINE LEGACY
+   (mesmo estilo dos seus cards)
+============================ */
+
+.inline-legacy-6:hover,
+.inline-legacy-11:hover,
+.inline-legacy-15:hover,
+.inline-legacy-18:hover,
+.inline-legacy-22:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(255,0,0,0.18);
+    border-color: rgba(255,0,0,0.4);
+}
+
+/* Para blocos grandes tipo seção */
+.inline-legacy-24:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,0,0,0.12);
+    border-color: rgba(255,0,0,0.35);
+}
+
+/* Para texto hover sutil (caso precise algum realce) */
+.inline-legacy-8:hover,
+.inline-legacy-9:hover,
+.inline-legacy-12:hover,
+.inline-legacy-13:hover,
+.inline-legacy-16:hover,
+.inline-legacy-19:hover,
+.inline-legacy-20:hover,
+.inline-legacy-23:hover,
+.inline-legacy-25:hover,
+.inline-legacy-26:hover,
+.inline-legacy-27:hover {
+    opacity: 1;
+    color: white;
+}
+
+/* Elementos de layout que só precisam mudança sutil */
+.inline-legacy-1:hover,
+.inline-legacy-2:hover,
+.inline-legacy-3:hover,
+.inline-legacy-4:hover,
+.inline-legacy-7:hover,
+.inline-legacy-10:hover,
+.inline-legacy-14:hover,
+.inline-legacy-17:hover,
+.inline-legacy-21:hover,
+.inline-legacy-28:hover,
+.inline-legacy-29:hover,
+.inline-legacy-30:hover {
+    filter: brightness(1.1);
+}
